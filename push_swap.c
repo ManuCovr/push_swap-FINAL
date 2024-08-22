@@ -6,7 +6,7 @@
 /*   By: mde-maga <mde-maga@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 15:50:11 by mde-maga          #+#    #+#             */
-/*   Updated: 2024/08/13 15:42:31 by mde-maga         ###   ########.fr       */
+/*   Updated: 2024/08/20 15:01:07 by mde-maga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,7 @@ int	main(int argc, char **argv)
 	a = NULL;
 	b = NULL;
 	if (argc == 1 || (argc == 2 && !argv[1][0]))
-	{
-		putstr_fd("Error\n", 2);
 		return (1);
-	}
 	luffy = ft_cut(argv + 1);
 	init_stack_a(&a, luffy);
 	if (!stack_sorted(a))
